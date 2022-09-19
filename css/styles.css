@@ -1,0 +1,401 @@
+:root {
+  /* Fonts */
+  --main-fonts: "Roboto", sans-serif;
+  --secondary-fonts: "Raleway", sans-serif;
+  /* Text colors */
+
+  --main-color: #212121;
+  --text-color: #757575;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --black-color: #000000;
+
+  /* Background colors */
+  --background-white-color: #f5f4fa;
+  --background-color: #2f303a;
+}
+
+/* Basic CSS */
+
+body {
+  font-family: var(--main-fonts);
+  color: var(--main-color);
+  letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  /* outline: 2px solid tomato;
+  outline-offset: -2px; */
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Header */
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 93px;
+  display: block;
+  font-family: var(--secondary-fonts);
+  color: var(--black-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo-accent {
+  color: var(--accent-color);
+}
+
+.header-list {
+  gap: 50px;
+  display: flex;
+}
+
+.header-contact-list {
+  display: flex;
+  margin-left: auto;
+  gap: 50px;
+}
+
+.header-list-link-active {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.header-list-link {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header-list-link:focus,
+.header-list-link:hover {
+  color: var(--accent-color);
+}
+
+.header-contact-link {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+.header-contact-link:focus,
+.header-contact-link:hover {
+  color: var(--accent-color);
+}
+
+/* Main */
+
+/* Hero */
+
+.section-hero {
+  background-color: var(--background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero {
+  margin-left: 252px;
+  margin-right: 252px;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.hero-btn {
+  width: 216px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  border: none;
+}
+
+.hero-btn:focus,
+.hero-btn:hover {
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/* About */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.about-list {
+  display: flex;
+  gap: 26px;
+}
+
+.about-list-item {
+  width: 270px;
+}
+
+.about-title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.about-text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--text-color);
+}
+
+/* Activity */
+
+.section-activity {
+  padding-bottom: 94px;
+}
+
+.activity-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.activity-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Team */
+
+.section-team {
+  background-color: var(--background-white-color);
+}
+
+.team-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-list-item {
+  background-color: var(--white-color);
+}
+
+.team-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team-list-title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+}
+
+.team-list-text {
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  color: var(--text-color);
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--background-color);
+}
+
+.section-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+  font-family: var(--secondary-fonts);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.92;
+  color: var(--white-color);
+}
+
+.footer-list-item:not(:last-child) {
+  display: block;
+  margin-bottom: 9px;
+}
+
+.map-link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--white-color);
+}
+
+.address-link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.map-link:focus,
+.map-link:hover,
+.address-link:focus,
+.address-link:hover {
+  color: var(--accent-color);
+}
+
+/* Portfolio */
+
+.header-portfolio {
+  border: 1px solid #ececec;
+}
+
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
+.portfolio-list-btn {
+  padding: 6px 22px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  background-color: var(--background-white-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.portfolio-list-btn:focus,
+.portfolio-list-btn:hover {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.card-info {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+}
+
+.portfolio-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.card-title {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.card-text {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--text-color);
+}
