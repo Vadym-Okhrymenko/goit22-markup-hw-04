@@ -38,6 +38,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -406,8 +408,16 @@ img {
   cursor: pointer;
 }
 
-.clients-list-item:focus,
-.clients-list-item:hover {
+.clients-list-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-list-link:focus,
+.clients-list-link:hover {
   fill: var(--pressed-state-color);
   border: 1px solid var(--pressed-state-color);
 }
@@ -531,26 +541,25 @@ img {
 .portfolio-card-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   gap: 24px;
 }
 
-.portfolio-card-item {
+.portfolio-card-link {
+  display: block;
+  width: 360px;
+  border: 1px solid var(--accent-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-card-link:hover,
+.portfolio-card-link:focus {
+  border: 1px solid var(--light-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .card-info {
   padding: 32px 0px 32px 16px;
-  border-left: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
-}
-
-.card-info:hover,
-.card-info:focus {
-  border: 1px solid #f4f4fd;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .card-title {
